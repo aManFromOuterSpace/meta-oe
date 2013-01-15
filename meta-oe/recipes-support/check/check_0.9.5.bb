@@ -7,8 +7,9 @@ PR = "r2"
 
 SRC_URI = "${SOURCEFORGE_MIRROR}/check/check-${PV}.tar.gz \
            file://configure_fix.patch \
-           file://check-m4-am-path-check-use-quadrigraphs-in-macro-names-to-unbreak-autoconf.patch \
-          "
+	   file://check-m4-am-path-check-use-quadrigraphs-in-macro-names-to-unbreak-autoconf.patch \
+	   file://configure-fix-for-new-automake.patch \
+	  "
 S = "${WORKDIR}/check-${PV}"
 
 inherit autotools pkgconfig
